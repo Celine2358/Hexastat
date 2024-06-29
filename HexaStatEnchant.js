@@ -396,7 +396,7 @@ function Calculate() {
     } else if (AddResult1 === "ATT" && Op5 == 1) {
         AddOption1.textContent = "공격력 / 마력 +" + (Add1Level * 5);
     } else if (AddResult1 === "Stat" && Op6 == 1) {
-        AddOption1.textContent = "주스탯 +" + (Add1Level * 100) + "(올스탯 +" + (Add1Level * 48) + " / 최대 HP +" + (Add1Level * 2100) + ")";
+        AddOption1.textContent = "주스탯 +" + (Add1Level * 100) + " (올스탯 +" + (Add1Level * 48) + " / 최대 HP +" + (Add1Level * 2100) + ")";
     }
 
     if (AddResult2 === "CriDamage" && Op1 == 1) {
