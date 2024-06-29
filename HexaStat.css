@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #202020;
+    margin: 0;
+}
+
+.Title {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 75px;
+    border-bottom: 1px solid #606060;
+    font-size: 28px;
+    color: white;
+}
+
+#HexaTitle {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5px;
+    align-items: center; /* 수직 중앙 정렬 */
+    cursor: pointer;
+}
+
+#HexaTitle img {
+    margin-bottom: 5px;
+    margin-right: 15px; /* 이미지와 텍스트 사이 간격 조절 */
+}
+
+#Celine {
+    position: absolute;
+    margin-top: 8px;
+    left: 96%;
+    cursor: pointer;
+}
+
+#SolErdaPiece {
+    display: block;
+}
+
+#Piece {
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    width: 300px; height: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+#Piece input {
+    width: 180px; height: 20px;
+    text-align: center;
+}
+
+#Piece button {
+    width: 50px; height: 25px;
+}
+
+/* 코어 닫힘 */
+#HexaStatLock {
+    display: block;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #CC99FF;
+    width: 850px; height: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#HexaStatLock span {
+    line-height: 50px;
+    font-size: 28px;
+    color: #CC99FF;
+}
+
+#MainLock {
+    display: block;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    width: 720px; height: 130px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#AddLock {
+    display: block;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    width: 720px; height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#MainLock span, #AddLock span {
+    display: flex;
+    font-size: 17px;
+    line-height: 35px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#MainLock div {
+    display: block;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 380px; height: 45px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+#AddLock div {
+    display: block;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 380px; height: 45px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+#CoreOpen {
+    display: block;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #CC99FF;
+    width: 260px; height: 45px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center; line-height: 45px;
+    color: #CC99FF;
+    cursor: pointer;
+}
+
+#UsedCost {
+    display: block;
+    position: absolute;
+    width: 400px; height: 360px;
+    left: 1400px; top: 230px;
+    font-size: 21px;
+    color: white;
+    margin-left: 10px;
+}
+
+#PiecePrice {
+    font-size: 18px;
+    margin: 10px 0px 10px 0px;
+}
+
+#Reset {
+    display: none;
+    width: 130px; height: 40px;
+    border: 2px solid gray;
+    box-shadow: 0 0 10px gray;
+    border-radius: 12px;
+    text-align: center; line-height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* 코어 활성화 */
+#HexaStatOpen {
+    display: none;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #CC99FF;
+    width: 850px; height: 680px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#HexaStatOpen span {
+    line-height: 50px;
+    font-size: 28px;
+    color: #CC99FF;
+}
+
+#CoreLevel {
+    color: #F8E8FF;
+    text-align: center;
+    font-size: 21px;
+}
+
+#MainOpen {
+    display: block;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    width: 720px; height: 130px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#AddOpen {
+    display: block;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    width: 720px; height: 260px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#MainOpen span, #AddOpen span {
+    display: flex;
+    font-size: 17px;
+    line-height: 35px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#Main1 {
+    display: flex;
+    color: #F8E8FF;
+    font-size: 19px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+#MainBar {
+    width: 590px; height: 18px;
+    border: 2px solid #9933FF;
+    margin: 7px 0px 7px 10px;
+    background-image: linear-gradient(to right, #9933FF 0%, transparent 0%);
+}
+
+#MainLevel {
+    display: block;
+    position: absolute;
+    top: 255px;
+    left: 1220px;
+    font-size: 19px;
+    color: #E9FFFF;
+}
+
+#MainChance {
+    display: flex;
+    color: #E9FFFF;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+#Add1, #Add2 {
+    display: flex;
+    color: #F8E8FF;
+    font-size: 19px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+#AddBar1, #AddBar2 {
+    width: 590px; height: 18px;
+    border: 2px solid skyblue;
+    margin: 7px 0px 7px 10px;
+    background-image: linear-gradient(to right, skyblue 0%, transparent 0%);
+}
+
+#AddLevel1, #AddLevel2 {
+    display: block;
+    position: absolute;
+    top: 425px;
+    left: 1220px;
+    font-size: 18px;
+    color: #E9FFFF;
+}
+
+#AddChance1, #AddChance2 {
+    display: flex;
+    color: #E9FFFF;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+#Add2 {
+    margin-top: 40px;
+}
+
+#AddLevel2 {
+    top: 545px;
+}
+
+#CostPieces {
+    display: block;
+    margin-top: 15px;
+}
+
+#CoreEnhance {
+    display: block;
+    border: 2px solid #CC99FF;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #CC99FF;
+    width: 260px; height: 45px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center; line-height: 45px;
+    color: #CC99FF;
+    cursor: pointer;
+}
+
+/* 메세지 창 */
+#Msg {
+    display: block;
+    width: 600px; height: 70px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px white;
+    text-align: center; line-height: 70px;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+}

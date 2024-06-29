@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>HEXA Stat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="HexaStat.css">
+</head>
+<body>
+    <div class="Title">
+        <div id="HexaTitle" onclick="Site()">
+            <img src="HexaMatrix.png">
+            헥사 스탯 시뮬레이터 BETA
+        </div>
+        <div id="Celine" onclick="OpenChat()">
+            <img style="width: 66px; height: 66px;" src="Celine.gif">
+        </div>
+    </div>
+    <div id="SolErdaPiece">
+        <div id="Piece">
+            솔 에르다 조각 시세
+            <input type="number" name="piece_price" placeholder="경매장 조각 시세 입력">
+            <button id="priceSet" onclick="PriceSetting()">입력</button>
+        </div>
+    </div>
+    <div id="UsedCost">
+        <div id="UsedPiece">
+            <img src="piece.png">
+            <span id="TotalShade">: 0 개</span>
+        </div>
+        <div id="PiecePrice">
+            (조각 시세 : 0 메소)
+        </div>
+        <div id="UsedMeso">
+            <img src="Meso.png">
+            <span id="TotalMeso">: 0</span>
+        </div>
+        <div id="Reset" onclick="HexaReset()">
+            초기화
+        </div>
+    </div>
+    <div id="HexaStatLock">
+        <span>HEXA 스탯</span>
+        <div id="MainLock">
+            <span>MAIN STAT</span>
+            <div>
+                <select id="MainSelect" name="MainCore">
+                    <option value="CriDamage">크리티컬 데미지</option>
+                    <option value="BossDamage">보스 몬스터 공격 시 데미지</option>
+                    <option value="IgnoreGuard">방어율 무시</option>
+                    <option value="Damage">데미지</option>
+                    <option value="ATT">공격력 / 마력</option>
+                    <option value="Stat">주스탯</option>
+                </select>
+            </div>
+        </div>
+        <div id="AddLock">
+            <span>ADDITIONAL STAT</span>
+            <div>
+                <select id="AddSelect1" name="AddCore1">
+                    <option value="CriDamage">크리티컬 데미지</option>
+                    <option value="BossDamage">보스 몬스터 공격 시 데미지</option>
+                    <option value="IgnoreGuard">방어율 무시</option>
+                    <option value="Damage">데미지</option>
+                    <option value="ATT">공격력 / 마력</option>
+                    <option value="Stat">주스탯</option>
+                </select>
+            </div>
+            <div>
+                <select id="AddSelect2" name="AddCore2">
+                    <option value="CriDamage">크리티컬 데미지</option>
+                    <option value="BossDamage">보스 몬스터 공격 시 데미지</option>
+                    <option value="IgnoreGuard">방어율 무시</option>
+                    <option value="Damage">데미지</option>
+                    <option value="ATT">공격력 / 마력</option>
+                    <option value="Stat">주스탯</option>
+                </select>
+            </div>
+        </div>
+        <div id="CoreOpen" onclick="CoreOpen()">
+            코어 활성화
+        </div>
+    </div>
+    <div id="HexaStatOpen">
+        <span>HEXA 스탯</span>
+        <div id="CoreLevel">0 / 20</div>
+        <div id="MainOpen">
+            <span>MAIN STAT</span>
+            <div id="Main1">
+                
+            </div>
+            <div id="MainBar">
+            </div>
+            <div id="MainLevel">
+                0<br>LEVEL
+            </div>
+            <div id="MainChance">
+                강화확률 35%
+            </div>
+        </div>
+        <div id="AddOpen">
+            <span>ADDITIONAL STAT</span>
+            <div id="Add1">
+                
+            </div>
+            <div id="AddBar1">
+            </div>
+            <div id="AddLevel1">
+                0<br>LEVEL
+            </div>
+            <div id="AddChance1">
+                강화확률 32.5%
+            </div>
+            <div id="Add2">
+                
+            </div>
+            <div id="AddBar2">
+            </div>
+            <div id="AddLevel2">
+                0<br>LEVEL
+            </div>
+            <div id="AddChance2">
+                강화확률 32.5%
+            </div>
+        </div>
+        <div id="CostPieces">
+            <img id="img" src="piece.png">
+            <span id="NeedPiece">x 10</span>
+        </div>
+        <div id="CoreEnhance" onclick="CoreEnhance()">
+            강화하기
+        </div>
+    </div>
+    <div id="Msg">
+        HEXA 스탯 2 추가 시 변동사항 있으면 업데이트 예정입니다!
+    </div>
+    <audio id="Sound"> <!--등장음-->
+        <source src="HexaCoreAfterEnforcement.mp3" type="audio/mp3">
+    </audio>
+</body>
+<script src="HexaStat.js">
+</script>
+<script src="HexaStatEnchant.js">
+</script>
+</html>
